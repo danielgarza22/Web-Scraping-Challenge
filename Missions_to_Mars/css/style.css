@@ -1,0 +1,22 @@
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+button {
+    border: rgb(0, 101, 184) solid 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 11px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 19px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: rgb(51, 121, 183);
+    border-radius: 8px;
+  }
+
+  .default:hover {
+    background: #e7e7e7;
+  }
