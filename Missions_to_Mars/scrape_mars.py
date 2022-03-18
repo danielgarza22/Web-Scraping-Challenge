@@ -179,6 +179,11 @@ browser.quit()
 
 # In[ ]:
 
-
-
+mars_data={
+    "recentTitle": news_title,
+    "recentParagraph":news_p,
+    "imageURL":space_image,
+    "table":mars_table_html,
+    "hemispheres":hem_img_urls
+}
 
