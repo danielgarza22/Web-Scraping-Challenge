@@ -22,7 +22,7 @@
             <div class=" jumbotron text-center">
                 <h1 >Mission to Mars</h1>
                 <div>
-                    <button type="button">Scrape New Data</button>
+                   <a href="/scrape"> <button type="button">Scrape New Data</button> </a>
                 </div>
             </div>
         <div>
@@ -31,34 +31,33 @@
             <div class="row">
                 <div>
                     <h2>Latest Mars News</h2>
-                    {{mars.recentTitle}}<br>
-                    {{mars.recentParagraph}}<br>
+                    {{mars.title}}<br>
+                    {{mars.paragraph}}<br>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-8">
                     <h2>Featured Mars Image</h2>
-                    <img src="{{mars.imageURL}}" alt="Mars Featured Image">
+                    <img src="{{mars.image}}" alt="Mars Featured Image">
                 </div>
                 <div class="col-md-4">
                     <div class="table-responsive">
-                    {{mars.table | safe}}
+                    {{mars.facts | safe}}
                     </div>
                 </div>
             </div>
 
-            <div class="row">
+        <div class="row">
             <h2>Mars Hemispheres</h2><br>
         </div>
         <div class="row">
-            <div class="col-md-3">
-            
+            <div class="col-md-3">           
                 <div class="card" style="width: 18rem;">
                     <img src={{mars.hemispheres[0].img_url}} class="card-img-top" alt="image1">
                     <div class="card-body">
                       <p class="card-text">{{mars.hemispheres[0]['title']}}</p>
                     </div>
-                  </div>
+                </div>
 
             </div>
             <div class="col-md-3">
@@ -67,7 +66,7 @@
                     <div class="card-body">
                       <p class="card-text">{{mars.hemispheres[1]['title']}}</p>
                     </div>
-                  </div>
+                </div>
             </div>
             <div class="col-md-3">
                 <div class="card" style="width: 18rem;">
@@ -75,7 +74,7 @@
                     <div class="card-body">
                       <p class="card-text">{{mars.hemispheres[2]['title']}}</p>
                     </div>
-                  </div>
+                </div>
             </div>
             <div class="col-md-3">
                 <div class="card" style="width: 18rem;">
